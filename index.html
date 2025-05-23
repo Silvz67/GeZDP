@@ -1,52 +1,79 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="imgs/logo zdp.jpg" type="image/x-icon">
-  <link rel="stylesheet" href="zdp.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="zdp.css" />
   <title>Grêmio ZDP</title>
 </head>
 <body>
-
   <header>
-    <div class="logo"><img src="imgs/logo zdp.jpg" alt="Logo ZDP"></div>
     <nav>
       <ul>
         <li><a href="#">Início</a></li>
         <li><a href="#quem-somos">Quem Somos</a></li>
+        <li><a href="#">Portal do Aluno</a></li>
         <li><a href="#projetos">Projetos e Eventos</a></li>
         <li><a href="#ouvidoria">Ouvidoria</a></li>
       </ul>
     </nav>
   </header>
 
-  <section class="bem-vindo">
-    <div class="texto">
-      <h1>Bem-vindo a pagina do <br> Grêmio Estudantil Zumbi dos Palmares</h1>
-      <p>Unindo vozes, construindo o futuro</p>
-    </div>
-    <div class="form-ouvidoria" id="ouvidoria">
+  <h2 class="titulo-principal">
+    Bem-vindo à página oficial do <br /> Grêmio Zumbi dos Palmares
+  </h2>
+
+  <main class="container">
+    <section class="ouvidoria" id="ouvidoria">
       <h2>Ouvidoria</h2>
-    <form>
-    <input type="text" placeholder="nome (opcional)">
-    <input type="text" placeholder="E-mail (opcional)">
-    <select>
-        <option value="Mensagem">mensagem</option>
-        <option value="Reclamação">reclamação</option>
-        <option value="Elogio">elogio</option>
-        <option value="Sugestão">sugestão</option>
-    </select>
-    <textarea placeholder="Escreva sua mensagem aqui... "></textarea>
-    <button type="submit">Enviar</button>
-    </form>
-    </div>
-  </section>
+      <form>
+        <div class="input-group">
+          <input type="text" placeholder="Nome (opcional)" />
+          <input type="email" placeholder="E-mail (opcional)" />
+        </div>
+
+        <label for="tipo">Tipo de mensagem:</label>
+        <select id="tipo" name="tipo">
+          <option value="mensagem">Mensagem</option>
+          <option value="reclamacao">Reclamação</option>
+          <option value="elogio">Elogio</option>
+          <option value="sugestao">Sugestão</option>
+        </select>
+
+        <label for="diretorias">Escolha uma diretoria P/ Direcionar Sua Mensgem:</label>
+        <select name="diretorias" id="diretorias">
+          <option value="">Selecione uma Diretoria</option>
+          <option value="presidencia">Presidência</option>
+          <option value="vice-presidencia">Vice-Presidência</option>
+          <option value="secretaria-geral">Secretaria Geral</option>
+          <option value="patrimonio-financas">Secretaria de Patrimônios e Finanças</option>
+          <option value="comunicacao-social">Diretoria de Comunicação Social</option>
+          <option value="arte-cultura">Diretoria de Arte e Cultura</option>
+          <option value="esportes">Diretoria de Esportes</option>
+          <option value="social-eventos">Diretoria Social e de Eventos</option>
+          <option value="assistencia-estudantil">Diretoria de Assistência Estudantil</option>
+          <option value="diversidade">Diretoria da Diversidade</option>
+          <option value="negritude">Diretoria de Negritude</option>
+          <option value="mulheres">Diretoria de Mulheres</option>
+        </select>
+
+        <div class="input-group">
+          <input type="text" placeholder="Escreva sua mensagem" />
+        </div>
+
+        <button class="button" type="submit">Enviar</button>
+      </form>
+    </section>
+
+    <section class="carrossel">
+      <div class="card">Notícias</div>
+      <img class="img" src="imgs/img.jpg" alt="teste" />
+    </section>
+  </main>
 
   <section class="quem-somos" id="quem-somos">
     <h2>Quem Somos</h2>
     <p>Apresentamos a equipe atual do grêmio estudantil e nossa missão dentro da escola.</p>
   </section>
-<script src="zdp.js"></script>
 </body>
 </html>
