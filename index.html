@@ -1,79 +1,29 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Carrossel Fade</title>
   <link rel="stylesheet" href="zdp.css" />
-  <title>Grêmio ZDP</title>
 </head>
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#">Início</a></li>
-        <li><a href="#quem-somos">Quem Somos</a></li>
-        <li><a href="#">Portal do Aluno</a></li>
-        <li><a href="#projetos">Projetos e Eventos</a></li>
-        <li><a href="#ouvidoria">Ouvidoria</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <h2 class="titulo-principal">
-    Bem-vindo à página oficial do <br /> Grêmio Zumbi dos Palmares
-  </h2>
+  <div class="carousel-container">
+    <div class="carousel-fade">
+      <img src="imgs/pode-não.png" alt="Foto 1" class="slide active">
+      <img src="imgs/transferir.jpg" alt="Foto 2" class="slide">
+      <img src="imgs/pode-não.png" alt="Foto 3" class="slide">
+    </div>
 
-  <main class="container">
-    <section class="ouvidoria" id="ouvidoria">
-      <h2>Ouvidoria</h2>
-      <form>
-        <div class="input-group">
-          <input type="text" placeholder="Nome (opcional)" />
-          <input type="email" placeholder="E-mail (opcional)" />
-        </div>
+    <div class="dots">
+      <span class="dot active"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
 
-        <label for="tipo">Tipo de mensagem:</label>
-        <select id="tipo" name="tipo">
-          <option value="mensagem">Mensagem</option>
-          <option value="reclamacao">Reclamação</option>
-          <option value="elogio">Elogio</option>
-          <option value="sugestao">Sugestão</option>
-        </select>
+    <button id="pauseBtn">⏸️</button>
+  </div>
 
-        <label for="diretorias">Escolha uma diretoria P/ Direcionar Sua Mensgem:</label>
-        <select name="diretorias" id="diretorias">
-          <option value="">Selecione uma Diretoria</option>
-          <option value="presidencia">Presidência</option>
-          <option value="vice-presidencia">Vice-Presidência</option>
-          <option value="secretaria-geral">Secretaria Geral</option>
-          <option value="patrimonio-financas">Secretaria de Patrimônios e Finanças</option>
-          <option value="comunicacao-social">Diretoria de Comunicação Social</option>
-          <option value="arte-cultura">Diretoria de Arte e Cultura</option>
-          <option value="esportes">Diretoria de Esportes</option>
-          <option value="social-eventos">Diretoria Social e de Eventos</option>
-          <option value="assistencia-estudantil">Diretoria de Assistência Estudantil</option>
-          <option value="diversidade">Diretoria da Diversidade</option>
-          <option value="negritude">Diretoria de Negritude</option>
-          <option value="mulheres">Diretoria de Mulheres</option>
-        </select>
-
-        <div class="input-group">
-          <input type="text" placeholder="Escreva sua mensagem" />
-        </div>
-
-        <button class="button" type="submit">Enviar</button>
-      </form>
-    </section>
-
-    <section class="carrossel">
-      <div class="card">Notícias</div>
-      <img class="img" src="imgs/img.jpg" alt="teste" />
-    </section>
-  </main>
-
-  <section class="quem-somos" id="quem-somos">
-    <h2>Quem Somos</h2>
-    <p>Apresentamos a equipe atual do grêmio estudantil e nossa missão dentro da escola.</p>
-  </section>
+  <script src="zdp.js"></script>
 </body>
 </html>
